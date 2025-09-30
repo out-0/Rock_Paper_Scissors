@@ -35,7 +35,7 @@ function playRound(userChoice, computerChoice) {
 	
 	if (userChoice == computerChoice)
 		return "It's a Draw!";
-	if (winAgainst[userChoice] == computerChoice)
+	if (winAgainst[userChoice] === computerChoice)
 		return `You Win! ${userChoice} beats ${computerChoice}`;
 	return `You Lose! ${computerChoice} beats ${userChoice}`;
 }
